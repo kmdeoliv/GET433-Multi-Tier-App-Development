@@ -1,0 +1,36 @@
+       01  MENUI.
+           02  FILLER PIC X(12).
+           02  COUNTERL    COMP  PIC  S9(4).
+           02  COUNTERF    PICTURE X.
+           02  FILLER REDEFINES COUNTERF.
+             03 COUNTERA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  COUNTERI  PIC X(4).
+           02  FILLER PIC X.
+           02  SMSGL    COMP  PIC  S9(4).
+           02  SMSGF    PICTURE X.
+           02  FILLER REDEFINES SMSGF.
+             03 SMSGA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  SMSGI  PIC X(1).
+           02  RMSGL    COMP  PIC  S9(4).
+           02  RMSGF    PICTURE X.
+           02  FILLER REDEFINES RMSGF.
+             03 RMSGA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  RMSGI  PIC X(1).
+       01  MENUO REDEFINES MENUI.
+           02  FILLER PIC X(12).
+           02  FILLER PICTURE X(3).
+           02  COUNTERC    PICTURE X.
+           02  COUNTERH    PICTURE X.
+           02  COUNTERO  PIC X(4).
+           02  FILLER PIC X.
+           02  FILLER PICTURE X(3).
+           02  SMSGC    PICTURE X.
+           02  SMSGH    PICTURE X.
+           02  SMSGO  PIC X(1).
+           02  FILLER PICTURE X(3).
+           02  RMSGC    PICTURE X.
+           02  RMSGH    PICTURE X.
+           02  RMSGO  PIC X(1).

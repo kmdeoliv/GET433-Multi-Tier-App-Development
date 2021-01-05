@@ -1,0 +1,32 @@
+M9ACCT  DFHMSD TYPE=&SYSPARM,MODE=INOUT,LANG=COBOL,STORAGE=AUTO,       X
+               DSATTS=(COLOR,HILIGHT),MAPATTS=(COLOR,HILIGHT),         X
+               TIOAPFX=YES
+
+MENU    DFHMDI SIZE=(24,80),LINE=1,COLUMN=1,COLOR=NEUTRAL
+
+        DFHMDF POS=(9,20),LENGTH=13,                                   X
+               ATTRB=ASKIP,COLOR=YELLOW,HILIGHT=REVERSE,               X
+               INITIAL=' YOUR  NAME: '
+
+        DFHMDF POS=(9,36),LENGTH=8,                                    X
+               ATTRB=ASKIP,                                            X
+               COLOR=NEUTRAL,                                          X
+               INITIAL='KELLY'
+        DFHMDF POS=(9,46),LENGTH=10,                                   X
+               ATTRB=ASKIP,                                            X
+               INITIAL='OLIVEIRA'
+
+        DFHMDF POS=(12,25),LENGTH=10,                                  X
+               ATTRB=ASKIP,COLOR=YELLOW,HILIGHT=REVERSE,               X
+               INITIAL=' COUNTER: '
+
+COUNTER DFHMDF POS=(12,36),LENGTH=4,                                   X
+               ATTRB=(PROT,ASKIP,NUM),HILIGHT=UNDERLINE
+
+        DFHMDF POS=(12,41),LENGTH=1,ATTRB=ASKIP
+
+        DFHMDF POS=(24,1),LENGTH=15,ATTRB=ASKIP,COLOR=PINK,            X
+               INITIAL='PF03 = EXIT  '
+
+        DFHMSD TYPE=FINAL
+        END

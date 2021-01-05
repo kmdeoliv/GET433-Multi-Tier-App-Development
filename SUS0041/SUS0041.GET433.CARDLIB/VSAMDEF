@@ -1,0 +1,18 @@
+/SUS0041A JOB 1,'KELLY',NOTIFY=SUS0041                                  00010005
+//STEP1    EXEC PGM=IDCAMS                                              00010103
+//SYSOUT   DD SYSOUT=*                                                  00010203
+//SYSPRINT DD SYSOUT=*                                                  00010303
+//SYSIN    DD *                                                         00010403
+  DELETE SUS0041.GET433.VSAM    CLUSTER PURGE                           00010507
+  DEFINE CLUSTER (NAME(SUS0041.GET433.VSAM.FILE)      -                 00010607
+    CYL   (5,2)                                       -                 00010703
+    KEYS  (06 6)                                      -                 00010803
+    VOLUMES (SO1W03)                                  -                 00010903
+    SHAREOPTIONS  (2 3))                              -                 00011003
+    DATA (NAME(SUS0041.GET433.VSAM.DATA)              -                 00011107
+    RECORDSIZE  (80 80)                               -                 00011203
+    FREESPACE    (00 00)                              -                 00011303
+    CISZ        (8096))                               -                 00011403
+    INDEX (NAME(SUS0041.GET433.VSAM.INDEX)            -                 00011507
+    CISZ   (512))                                                       00011603
+/*                                                                      00011703

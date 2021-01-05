@@ -1,0 +1,148 @@
+       01  MENUI.
+           02  FILLER PIC X(12).
+           02  MOPTL    COMP  PIC  S9(4).
+           02  MOPTF    PICTURE X.
+           02  FILLER REDEFINES MOPTF.
+             03 MOPTA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  MOPTI  PIC X(1).
+           02  MMSGL    COMP  PIC  S9(4).
+           02  MMSGF    PICTURE X.
+           02  FILLER REDEFINES MMSGF.
+             03 MMSGA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  MMSGI  PIC X(79).
+       01  MENUO REDEFINES MENUI.
+           02  FILLER PIC X(12).
+           02  FILLER PICTURE X(3).
+           02  MOPTC    PICTURE X.
+           02  MOPTH    PICTURE X.
+           02  MOPTO  PIC X(1).
+           02  FILLER PICTURE X(3).
+           02  MMSGC    PICTURE X.
+           02  MMSGH    PICTURE X.
+           02  MMSGO  PIC X(79).
+       01  DETAILSI.
+           02  FILLER PIC X(12).
+           02  HEADL    COMP  PIC  S9(4).
+           02  HEADF    PICTURE X.
+           02  FILLER REDEFINES HEADF.
+             03 HEADA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  HEADI  PIC X(20).
+           02  FILLER PIC X.
+           02  ACCOUNTL    COMP  PIC  S9(4).
+           02  ACCOUNTF    PICTURE X.
+           02  FILLER REDEFINES ACCOUNTF.
+             03 ACCOUNTA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  ACCOUNTI  PIC X(8).
+           02  FILLER PIC X.
+           02  BALANCEL    COMP  PIC  S9(4).
+           02  BALANCEF    PICTURE X.
+           02  FILLER REDEFINES BALANCEF.
+             03 BALANCEA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  BALANCEI  PIC X(13).
+           02  LIMITL    COMP  PIC  S9(4).
+           02  LIMITF    PICTURE X.
+           02  FILLER REDEFINES LIMITF.
+             03 LIMITA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  LIMITI  PIC X(13).
+           02  SURNL    COMP  PIC  S9(4).
+           02  SURNF    PICTURE X.
+           02  FILLER REDEFINES SURNF.
+             03 SURNA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  SURNI  PIC X(20).
+           02  FILLER PIC X.
+           02  FIRSTNL    COMP  PIC  S9(4).
+           02  FIRSTNF    PICTURE X.
+           02  FILLER REDEFINES FIRSTNF.
+             03 FIRSTNA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  FIRSTNI  PIC X(15).
+           02  ADDR1L    COMP  PIC  S9(4).
+           02  ADDR1F    PICTURE X.
+           02  FILLER REDEFINES ADDR1F.
+             03 ADDR1A    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  ADDR1I  PIC X(25).
+           02  ADDR2L    COMP  PIC  S9(4).
+           02  ADDR2F    PICTURE X.
+           02  FILLER REDEFINES ADDR2F.
+             03 ADDR2A    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  ADDR2I  PIC X(20).
+           02  FILLER PIC X.
+           02  ADDR3L    COMP  PIC  S9(4).
+           02  ADDR3F    PICTURE X.
+           02  FILLER REDEFINES ADDR3F.
+             03 ADDR3A    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  ADDR3I  PIC X(15).
+           02  ACCTCOML    COMP  PIC  S9(4).
+           02  ACCTCOMF    PICTURE X.
+           02  FILLER REDEFINES ACCTCOMF.
+             03 ACCTCOMA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  ACCTCOMI  PIC X(50).
+           02  FILLER PIC X.
+           02  DMSGL    COMP  PIC  S9(4).
+           02  DMSGF    PICTURE X.
+           02  FILLER REDEFINES DMSGF.
+             03 DMSGA    PICTURE X.
+           02  FILLER   PICTURE X(2).
+           02  DMSGI  PIC X(79).
+       01  DETAILSO REDEFINES DETAILSI.
+           02  FILLER PIC X(12).
+           02  FILLER PICTURE X(3).
+           02  HEADC    PICTURE X.
+           02  HEADH    PICTURE X.
+           02  HEADO  PIC X(20).
+           02  FILLER PIC X.
+           02  FILLER PICTURE X(3).
+           02  ACCOUNTC    PICTURE X.
+           02  ACCOUNTH    PICTURE X.
+           02  ACCOUNTO  PIC X(8).
+           02  FILLER PIC X.
+           02  FILLER PICTURE X(3).
+           02  BALANCEC    PICTURE X.
+           02  BALANCEH    PICTURE X.
+           02  BALANCEO PIC $$,$$$,$$9.99.
+           02  FILLER PICTURE X(3).
+           02  LIMITC    PICTURE X.
+           02  LIMITH    PICTURE X.
+           02  LIMITO PIC $$,$$$,$$9.99.
+           02  FILLER PICTURE X(3).
+           02  SURNC    PICTURE X.
+           02  SURNH    PICTURE X.
+           02  SURNO  PIC X(20).
+           02  FILLER PIC X.
+           02  FILLER PICTURE X(3).
+           02  FIRSTNC    PICTURE X.
+           02  FIRSTNH    PICTURE X.
+           02  FIRSTNO  PIC X(15).
+           02  FILLER PICTURE X(3).
+           02  ADDR1C    PICTURE X.
+           02  ADDR1H    PICTURE X.
+           02  ADDR1O  PIC X(25).
+           02  FILLER PICTURE X(3).
+           02  ADDR2C    PICTURE X.
+           02  ADDR2H    PICTURE X.
+           02  ADDR2O  PIC X(20).
+           02  FILLER PIC X.
+           02  FILLER PICTURE X(3).
+           02  ADDR3C    PICTURE X.
+           02  ADDR3H    PICTURE X.
+           02  ADDR3O  PIC X(15).
+           02  FILLER PICTURE X(3).
+           02  ACCTCOMC    PICTURE X.
+           02  ACCTCOMH    PICTURE X.
+           02  ACCTCOMO  PIC X(50).
+           02  FILLER PIC X.
+           02  FILLER PICTURE X(3).
+           02  DMSGC    PICTURE X.
+           02  DMSGH    PICTURE X.
+           02  DMSGO  PIC X(79).
